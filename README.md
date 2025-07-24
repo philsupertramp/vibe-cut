@@ -14,34 +14,45 @@ You need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/
 ### **Installation**
 
 1. **Clone the repository:**  
+   ```
    git clone https://github.com/philsupertramp/vibe-cut.git  
    cd vibe-cut
+   ```
 
 2. **Install dependencies:**  
    Using npm:  
+   ```
    npm install
+   ```
 
    Or using yarn:  
+   ```
    yarn
+   ```
 
 ## **Usage**
 
 1. **Get your React component from an LLM:**  
-   Ask your favorite LLM (like me\!) to generate a single-file React application. Make sure the main component is exported as default.  
+   Ask your favorite LLM (like gemini) to generate a single-file React application. Make sure the main component is exported as default.  
 2. **Replace the placeholder App:**  
    Copy the code from the LLM and paste it into the src/App.jsx file, completely replacing its contents.  
 3. **Run the development server:**  
    Using npm:  
+   ```
    npm run dev
+   ```
 
    Or using yarn:  
+   ```
    yarn dev
+   ```
 
 4. **View your application:**  
    Open your browser and navigate to the URL provided by Vite (usually http://localhost:5173).
 
 ## **Project Structure**
 
+```
 .  
 ├── index.html  
 ├── package.json  
@@ -50,9 +61,10 @@ You need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/
 └── src  
     ├── App.jsx  
     └── main.jsx
+```
 
-* index.html: The main HTML file.  
-* package.json: Project configuration and dependencies.  
-* vite.config.js: Vite configuration file.  
-* src/main.jsx: The entry point of the application.  
-* src/App.jsx: The main React component file (this is the one you'll be replacing).
+* `index.html`: The main HTML file.  
+* `package.json`: Project configuration and dependencies.  
+* `vite.config.js`: Vite configuration file.  
+* `src/main.jsx`: The entry point of the application.  
+* `src/App.jsx`: The main React component file (this is the one you'll be replacing).
